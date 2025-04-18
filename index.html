@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WineDirect | Premium Wine Delivery | South Africa</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="container nav-container">
+      <a href="#" class="logo">
+        <i class="fas fa-wine-glass-alt logo-icon"></i>
+        <span>Wine<span class="logo-highlight">Direct</span></span>
+      </a>
+      <div class="nav-actions">
+        <a href="#contact" class="nav-link"><i class="fas fa-phone-alt"></i> Contact</a>
+        <a href="#booking" class="btn btn-primary pulse-animate">
+          <i class="fas fa-shopping-bag"></i> Order Now
+        </a>
+      </div>
+      <button class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-overlay"></div>
+    <div class="container hero-content">
+      <h1 class="hero-title">Exceptional Wines <br>Delivered to Your Door</h1>
+      <p class="hero-subtitle">South Africa's finest selection with next-day delivery</p>
+      <a href="#booking" class="btn btn-hero">
+        <span>Order Now</span>
+        <i class="fas fa-chevron-right"></i>
+      </a>
+    </div>
+    <div class="scroll-indicator">
+      <div class="mouse"></div>
+    </div>
+  </section>
+
+  <!-- Booking Section -->
+  <section id="booking" class="booking">
+    <div class="container">
+      <div class="section-header">
+        <h2>Book Your Wine Delivery</h2>
+        <p>Experience the convenience of premium wine delivery</p>
+      </div>
+      
+      <div class="booking-card glass-effect">
+        <div class="booking-form">
+          <div class="form-progress">
+            <div class="progress-step active" data-step="1">
+              <div class="step-number">1</div>
+              <div class="step-label">Details</div>
+            </div>
+            <div class="progress-step" data-step="2">
+              <div class="step-number">2</div>
+              <div class="step-label">Selection</div>
+            </div>
+            <div class="progress-step" data-step="3">
+              <div class="step-number">3</div>
+              <div class="step-label">Payment</div>
+            </div>
+            <div class="progress-bar"></div>
+          </div>
+
+          <form id="bookingForm">
+            <!-- Step 1: Personal Details -->
+            <div class="form-step active" data-step="1">
+              <div class="form-group floating-label">
+                <input type="text" id="fullname" placeholder=" " required>
+                <label for="fullname"><i class="fas fa-user"></i> Full Name</label>
+                <div class="underline"></div>
+              </div>
+              <div class="form-group floating-label">
+                <input type="email" id="email" placeholder=" " required>
+                <label for="email"><i class="fas fa-envelope"></i> Email</label>
+                <div class="underline"></div>
+              </div>
+              <div class="form-group floating-label">
+                <input type="tel" id="phone" placeholder=" " required>
+                <label for="phone"><i class="fas fa-phone"></i> Phone Number</label>
+                <div class="underline"></div>
+              </div>
+              <div class="form-group floating-label">
+                <textarea id="address" placeholder=" " required></textarea>
+                <label for="address"><i class="fas fa-map-marker-alt"></i> Delivery Address</label>
+                <div class="underline"></div>
+              </div>
+              <div class="form-actions">
+                <button type="button" class="btn btn-next">
+                  <span>Continue</span>
+                  <i class="fas fa-chevron-right"></i>
+                </button>
+              </div>
+            </div>
+
+            <!-- Step 2: Wine Selection -->
+            <div class="form-step" data-step="2">
+              <div class="wine-selection">
+                <div class="wine-card selected" data-price="450">
+                  <div class="wine-image" style="background-image: url('https://images.unsplash.com/photo-1551024506-0bccd828d307?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80')"></div>
+                  <h3>Premium Red Blend</h3>
+                  <p class="wine-description">Rich and full-bodied with dark fruit flavors</p>
+                  <div class="wine-price">R450</div>
+                  <div class="wine-selector">
+                    <button class="qty-btn minus"><i class="fas fa-minus"></i></button>
+                    <input type="number" value="1" min="0" max="10">
+                    <button class="qty-btn plus"><i class="fas fa-plus"></i></button>
+                  </div>
+                </div>
+
+                <div class="wine-card" data-price="400">
+                  <div class="wine-image" style="background-image: url('https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80')"></div>
+                  <h3>Crisp White Wine</h3>
+                  <p class="wine-description">Refreshing with citrus and tropical fruit notes</p>
+                  <div class="wine-price">R400</div>
+                  <div class="wine-selector">
+                    <button class="qty-btn minus"><i class="fas fa-minus"></i></button>
+                    <input type="number" value="0" min="0" max="10">
+                    <button class="qty-btn plus"><i class="fas fa-plus"></i></button>
+                  </div>
+                </div>
+
+                <div class="wine-card" data-price="420">
+                  <div class="wine-image" style="background-image: url('https://images.unsplash.com/photo-1531384370597-8590413be50a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80')"></div>
+                  <h3>Elegant Rosé</h3>
+                  <p class="wine-description">Delicate and dry with strawberry aromas</p>
+                  <div class="wine-price">R420</div>
+                  <div class="wine-selector">
+                    <button class="qty-btn minus"><i class="fas fa-minus"></i></button>
+                    <input type="number" value="0" min="0" max="10">
+                    <button class="qty-btn plus"><i class="fas fa-plus"></i></button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="form-actions">
+                <button type="button" class="btn btn-prev">
+                  <i class="fas fa-chevron-left"></i>
+                  <span>Back</span>
+                </button>
+                <button type="button" class="btn btn-next">
+                  <span>Continue</span>
+                  <i class="fas fa-chevron-right"></i>
+                </button>
+              </div>
+            </div>
+
+            <!-- Step 3: Payment -->
+            <div class="form-step" data-step="3">
+              <div class="order-summary">
+                <h3>Order Summary</h3>
+                <div class="summary-items">
+                  <!-- Items will be added dynamically -->
+                </div>
+                <div class="summary-total">
+                  <div class="total-row">
+                    <span>Subtotal:</span>
+                    <span id="subtotal">R0</span>
+                  </div>
+                  <div class="total-row">
+                    <span>Delivery:</span>
+                    <span id="delivery-fee">R50</span>
+                  </div>
+                  <div class="total-row grand-total">
+                    <span>Total:</span>
+                    <span id="grand-total">R50</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="payment-methods">
+                <h3>Payment Method</h3>
+                <div class="payment-options">
+                  <label class="payment-option">
+                    <input type="radio" name="payment" value="Credit Card" checked>
+                    <div class="payment-card">
+                      <i class="fas fa-credit-card"></i>
+                      <span>Credit Card</span>
+                    </div>
+                  </label>
+                  <label class="payment-option">
+                    <input type="radio" name="payment" value="PayPal">
+                    <div class="payment-card">
+                      <i class="fab fa-cc-paypal"></i>
+                      <span>PayPal</span>
+                    </div>
+                  </label>
+                  <label class="payment-option">
+                    <input type="radio" name="payment" value="Cash on Delivery">
+                    <div class="payment-card">
+                      <i class="fas fa-money-bill-wave"></i>
+                      <span>Cash on Delivery</span>
+                    </div>
+                  </label>
+                </div>
+              </div>
+
+              <div class="form-actions">
+                <button type="button" class="btn btn-prev">
+                  <i class="fas fa-chevron-left"></i>
+                  <span>Back</span>
+                </button>
+                <button type="submit" class="btn btn-submit">
+                  <i class="fas fa-lock"></i>
+                  <span>Complete Order</span>
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Confirmation Modal -->
+  <div class="modal" id="confirmationModal">
+    <div class="modal-content">
+      <div class="modal-success">
+        <div class="success-animation">
+          <svg class="checkmark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 52">
+            <circle class="checkmark-circle" cx="26" cy="26" r="25" fill="none"/>
+            <path class="checkmark-check" fill="none" d="M14.1 27.2l7.1 7.2 16.7-16.8"/>
+          </svg>
+        </div>
+        <h2>Order Confirmed!</h2>
+        <p>Thank you for your order. We're preparing your wine for delivery.</p>
+        <div class="order-details">
+          <h3>Order Summary</h3>
+          <div id="orderDetails">
+            <!-- Order details will be inserted here -->
+          </div>
+        </div>
+        <button class="btn btn-close-modal">Close</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
